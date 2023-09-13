@@ -8,7 +8,8 @@ export default function App() {
       <Text>Welcome to Roadtripper!</Text>
       <Button title="click here" onPress={() => Alert.alert("Title", "Message",
       [ {text: "Yes", onPress: () => console.log('Yes')},
-      {text: "No", onPress: () => console.log('No')}
+      {text: "No", onPress: () => console.log('No')},
+      {text: "Maybe", onPress: () => console.log('Maybe')},
       ])}/>
       <StatusBar style="auto" />
     </View>
