@@ -3,9 +3,10 @@ import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View, Alert } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import { Stack } from 'expo-router';
 import Welcome from './app/screens/Welcome';
 import Profile from './app/screens/ProfileScreen';
+
+const Stack = createNativeStackNavigator(); 
 
 export default function App() {
   return (
