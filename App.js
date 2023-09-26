@@ -1,12 +1,11 @@
-import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, Alert } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Welcome from './app/screens/Welcome';
-import Profile from './app/screens/ProfileScreen';
+import React from "react";
+import { StyleSheet } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Welcome from "./app/screens/Welcome";
+import Profile from "./app/screens/ProfileScreen";
 
-const Stack = createNativeStackNavigator(); 
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
@@ -15,7 +14,7 @@ export default function App() {
         <Stack.Screen
           name="WelcomeScreen"
           component={Welcome}
-          options={{title: 'Welcome'}}
+          options={{ title: "Welcome" }}
         />
         <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
@@ -26,8 +25,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
