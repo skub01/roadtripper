@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import React, { useState } from "react";
+import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 
 const Profile = () => {
-  const [name, setName] = useState(''); 
-  const [location, setLocation] = useState(''); 
+  const [name, setName] = useState("");
+  const [location, setLocation] = useState("");
 
   const saveDetails = () => {
     console.log(`Saving user details: Name - ${name}; Location - ${location}`);
@@ -20,7 +20,7 @@ const Profile = () => {
         style={styles.input}
       />
 
-<TextInput
+      <TextInput
         placeholder="Enter your location"
         value={location}
         onChangeText={(text) => setLocation(text)}
@@ -35,12 +35,12 @@ const Profile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   input: {
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: "gray",
     padding: 10,
     width: 200,
     marginBottom: 20,
