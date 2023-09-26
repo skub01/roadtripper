@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 const Profile = () => {
-  const [name, setName] = useState(''); // State to hold the user's name
+  const [name, setName] = useState(''); 
 
   const saveDetails = () => {
-    // Implement your logic to save the user's details (e.g., to a database)
-    // You can use the 'name' state value to save the user's name
     console.log(`Saving user details: Name - ${name}`);
   };
 
