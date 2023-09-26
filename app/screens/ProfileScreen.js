@@ -3,9 +3,10 @@ import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 const Profile = () => {
   const [name, setName] = useState(''); 
+  const [location, setLocation] = useState(''); 
 
   const saveDetails = () => {
-    console.log(`Saving user details: Name - ${name}`);
+    console.log(`Saving user details: Name - ${name}; Location - ${location}`);
   };
 
   return (
@@ -16,6 +17,13 @@ const Profile = () => {
         placeholder="Enter your name"
         value={name}
         onChangeText={(text) => setName(text)}
+        style={styles.input}
+      />
+
+<TextInput
+        placeholder="Enter your location"
+        value={location}
+        onChangeText={(text) => setLocation(text)}
         style={styles.input}
       />
 
