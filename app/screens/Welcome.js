@@ -6,7 +6,8 @@ export default function Welcome({ navigation }) {
   return (
     <>
       <View style={styles.container}>
-        <Text>Welcome to Roadtripper!</Text>
+        <Text
+        style={styles.welcome}>Welcome to Roadtripper!</Text>
         <Button
           title="click here"
           onPress={() =>
@@ -32,5 +33,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  welcome: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
   },
 });
