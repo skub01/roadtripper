@@ -16,6 +16,18 @@ export default function App() {
           component={Welcome}
           options={{ title: "Welcome" }}
         />
+    <Button
+          title="Log in"
+          onPress={() =>
+            Alert.alert("This is a test")
+          }
+        />
+        <Button
+          title="Sign up"
+          onPress={() =>
+            Alert.alert("This is a test")
+          }
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
