@@ -16,7 +16,6 @@ export default function App() {
           component={Welcome}
           options={{ title: "Welcome" }}
         />
-        <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

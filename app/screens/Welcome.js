@@ -20,7 +20,7 @@ export default function Welcome({ navigation }) {
         <StatusBar style="auto" />
       </View>
       <Button
-        title="Go to your profile"
+        title="My profile"
         onPress={() => navigation.navigate("Profile")}
       />
     </>
