@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { Button, StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Welcome from "./app/screens/Welcome";
@@ -14,19 +14,25 @@ export default function App() {
         <Stack.Screen
           name="WelcomeScreen"
           component={Welcome}
-          options={{ title: "Welcome" }}
+          options={({ navigation }) => ({
+            title: "Welcome",
+            headerRight: () => <LoginScreen navigation={navigation} />,
+          })}
         />
-    <Button
-          title="Log in"
-          onPress={() =>
-            Alert.alert("This is a test")
-          }
+        <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{ title: "Profile" }}
         />
-        <Button
-          title="Sign up"
-          onPress={() =>
-            Alert.alert("This is a test")
-          }
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ title: "Log in" }}
+        />
+        <Stack.Screen
+          name="SignUp"
+          component={SignUpScreen}
+          options={{ title: "Sign up" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
