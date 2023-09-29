@@ -1,31 +1,25 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { Button, StyleSheet, Text, View, Alert } from "react-native";
+import { View, Text, Button, StyleSheet } from "react-native";
 
-export default function Welcome({ navigation }) {
+const Welcome = ({ navigation }) => {
   return (
-    <>
-      <View style={styles.container}>
-        <Text
-        style={styles.welcome}>Welcome to Roadtripper!</Text>
-        <Button
-          title="click here"
-          onPress={() =>
-            Alert.alert("This is a test", "Testing", [
-              { text: "Yes", onPress: () => console.log("Yes") },
-              { text: "No", onPress: () => console.log("No") },
-            ])
-          }
-        />
-        <StatusBar style="auto" />
-      </View>
+    <View style={styles.container}>
+      <Text style={styles.welcome}>Welcome to Roadtripper!</Text>
       <Button
-        title="My profile"
-        onPress={() => navigation.navigate("Profile")}
+        title="Log in"
+        onPress={() => {
+          navigation.navigate("Profile");
+        }}
       />
-    </>
+      <Button
+        title="Sign up"
+        onPress={() => {
+          navigation.navigate("Profile");
+        }}
+      />
+    </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -40,3 +34,5 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
 });
+
+export default Welcome;
