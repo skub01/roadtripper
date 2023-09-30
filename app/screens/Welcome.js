@@ -8,13 +8,13 @@ const Welcome = ({ navigation }) => {
       <Button
         title="Log in"
         onPress={() => {
-          navigation.navigate("Profile");
+          navigation.navigate("Login");
         }}
       />
       <Button
         title="Sign up"
         onPress={() => {
-          navigation.navigate("Profile");
+          navigation.navigate("SignUp");
         }}
       />
     </View>

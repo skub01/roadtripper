@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-native";
 
-const SignUpScreen = ({ navigation }) => {
+const SignupScreen = ({ navigation }) => {
   return (
     <Button
       title="Sign up"
@@ -12,4 +12,4 @@ const SignUpScreen = ({ navigation }) => {
   );
 };
 
-export default SignUpScreen;
+export default SignupScreen;

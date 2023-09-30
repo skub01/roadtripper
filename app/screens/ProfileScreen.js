@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
 
