@@ -33,9 +33,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   welcome: {
-    color: 'blue',
+    color: 'black',
     fontWeight: 'bold',
     fontSize: 30,
+    marginTop: -400
   },
   backgroundImage: {
     flex: 1,
