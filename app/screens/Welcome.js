@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Button, StyleSheet, ImageBackground } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
 
 const Welcome = ({ navigation }) => {
   return (
@@ -11,20 +11,22 @@ const Welcome = ({ navigation }) => {
         <Text style={styles.welcome}>Roadtripper</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <Button
-          title="Log in"
+        <TouchableOpacity
+          style={styles.button}
           onPress={() => {
             navigation.navigate("Login");
           }}
+        >
+          <Text style={styles.buttonText}>Log in</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           style={styles.button}
-        />
-        <Button
-          title="Sign up"
           onPress={() => {
             navigation.navigate("SignUp");
           }}
-          style={styles.button}
-        />
+        >
+          <Text style={styles.buttonText}>Sign up</Text>
+        </TouchableOpacity>
       </View>
     </ImageBackground>
   );
@@ -50,10 +52,17 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flex: 1,
     justifyContent: "flex-end",
-    marginBottom: 150,
+    marginBottom: 50,
   },
   button: {
-    color: 'red',
+    backgroundColor: '#b9c3c6', 
+    borderRadius: 5,
+    padding: 10,
+    marginBottom: 10,
+    alignItems: "center",
+  },
+  buttonText: {
+    color: 'white',
     fontWeight: 'bold',
     fontSize: 20, 
   },
