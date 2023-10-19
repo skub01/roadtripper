@@ -16,7 +16,7 @@ const TripScreen = ({ navigation }) => {
   <Button
   title="Past Trips"
   onPress={() => {
-    navigation.navigate("");
+    navigation.navigate("PastTripsScreen");
   }}
 />
 </>
