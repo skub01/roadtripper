@@ -14,14 +14,14 @@ const NewTripScreen = ({ navigation }) => {
         <Text>Let's get roadtripping!</Text>
   
         <TextInput
-          placeholder="Enter your starting location"
+          placeholder="Starting location"
           value={startLocation}
           onChangeText={(text) => setStartLocation(text)}
           style={styles.input}
         />
-  
+   <Text>to</Text>
         <TextInput
-          placeholder="Enter your destination"
+          placeholder="Destination"
           value={endLocation}
           onChangeText={(text) => setEndLocation(text)}
           style={styles.input}
