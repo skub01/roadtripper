@@ -9,7 +9,7 @@ const TripScreen = ({ navigation }) => {
     <Button
     title="New Trip"
     onPress={() => {
-      navigation.navigate("");
+      navigation.navigate("NewTripScreen");
     }}
   />
 
