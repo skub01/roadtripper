@@ -6,7 +6,7 @@ const BackButton = ({ navigation }) => {
     <Button
       title="Back"
       onPress={() => {
-        navigation.navigate("");
+        navigation.goBack();
       }}
     />
   );
