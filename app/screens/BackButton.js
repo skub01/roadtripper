@@ -15,14 +15,12 @@ const BackButton = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     button: {
-      backgroundColor: '#b9c3c6', 
       borderRadius: 5,
       padding: 10,
-      marginBottom: 10,
       alignItems: "center",
     },
     buttonText: {
-      color: 'white',
+      color: 'black',
       fontWeight: 'bold',
       fontSize: 20, 
     },
