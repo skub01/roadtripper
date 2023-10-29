@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
       alignItems: "center",
     },
     buttonText: {
-      color: 'black',
+      color: 'blue',
       fontWeight: 'bold',
-      fontSize: 20, 
+      fontSize: 16, 
     },
   });
 
