@@ -10,10 +10,14 @@ const SightCard = () => {
 };
 
 const styles = StyleSheet.create({
+    title: {
+        color: 'black',
+        fontWeight: 'bold',
+        fontSize: 38,
+      },
     text: {
       color: 'black',
-      fontWeight: 'bold',
-      fontSize: 30,
+      fontSize: 26,
     },
   });
 
