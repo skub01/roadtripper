@@ -9,4 +9,12 @@ const SightCard = () => {
   );
 };
 
+const styles = StyleSheet.create({
+    text: {
+      color: 'black',
+      fontWeight: 'bold',
+      fontSize: 30,
+    },
+  });
+
 export default SightCard;
