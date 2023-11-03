@@ -4,8 +4,8 @@ import { Button } from "react-native";
 const PastTripsScreen = ({ navigation }) => {
   return (
     <>
-    <Text>Past Trips</Text>
-</>
+      <Text>Past Trips</Text>
+    </>
   );
 };
 

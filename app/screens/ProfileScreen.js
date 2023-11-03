@@ -11,7 +11,9 @@ const Profile = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text>Welcome{name ? ` ${name}!` : '!'} This is your profile screen!</Text>
+      <Text>
+        Welcome{name ? ` ${name}!` : "!"} This is your profile screen!
+      </Text>
 
       <TextInput
         placeholder="Enter your name"

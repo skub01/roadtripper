@@ -14,16 +14,16 @@ const BackButton = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-    button: {
-      borderRadius: 5,
-      padding: 10,
-      alignItems: "center",
-    },
-    buttonText: {
-      color: 'blue',
-      fontWeight: 'bold',
-      fontSize: 16, 
-    },
-  });
+  button: {
+    borderRadius: 5,
+    padding: 10,
+    alignItems: "center",
+  },
+  buttonText: {
+    color: "blue",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
+});
 
 export default BackButton;

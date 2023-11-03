@@ -4,22 +4,22 @@ import { Button } from "react-native";
 const TripScreen = ({ navigation }) => {
   return (
     <>
-    <Text>My Trips</Text>
+      <Text>My Trips</Text>
 
-    <Button
-    title="New Trip"
-    onPress={() => {
-      navigation.navigate("NewTripScreen");
-    }}
-  />
+      <Button
+        title="New Trip"
+        onPress={() => {
+          navigation.navigate("NewTripScreen");
+        }}
+      />
 
-  <Button
-  title="Past Trips"
-  onPress={() => {
-    navigation.navigate("PastTripsScreen");
-  }}
-/>
-</>
+      <Button
+        title="Past Trips"
+        onPress={() => {
+          navigation.navigate("PastTripsScreen");
+        }}
+      />
+    </>
   );
 };
 

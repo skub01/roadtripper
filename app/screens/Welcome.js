@@ -1,10 +1,16 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  ImageBackground,
+} from "react-native";
 
 const Welcome = ({ navigation }) => {
   return (
     <ImageBackground
-      source={require('../assets/bg.jpg')}
+      source={require("../assets/bg.jpg")}
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
@@ -36,12 +42,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "flex-start", 
+    justifyContent: "flex-start",
     paddingTop: 100,
   },
   welcome: {
-    color: 'black',
-    fontWeight: 'bold',
+    color: "black",
+    fontWeight: "bold",
     fontSize: 60,
   },
   backgroundImage: {
@@ -55,16 +61,16 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
   button: {
-    backgroundColor: '#b9c3c6', 
+    backgroundColor: "#b9c3c6",
     borderRadius: 5,
     padding: 10,
     marginBottom: 10,
     alignItems: "center",
   },
   buttonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 20, 
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 20,
   },
 });
 
