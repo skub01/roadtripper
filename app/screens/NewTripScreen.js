@@ -11,7 +11,7 @@ const NewTripScreen = ({ navigation }) => {
   
     return (
       <View style={styles.container}>
-        <Text>Let's get roadtripping!</Text>
+        <Text style={styles.title}>Let's get roadtripping!</Text>
   
         <TextInput
           placeholder="Starting location"
@@ -19,7 +19,7 @@ const NewTripScreen = ({ navigation }) => {
           onChangeText={(text) => setStartLocation(text)}
           style={styles.input}
         />
-   <Text>to</Text>
+   <Text style={styles.toText}>to</Text>
         <TextInput
           placeholder="Destination"
           value={endLocation}
@@ -38,6 +38,22 @@ const NewTripScreen = ({ navigation }) => {
       justifyContent: "center",
       alignItems: "center",
       padding: 20,
+    },
+    title: {
+      fontSize: 20,
+      marginBottom: 20,
+    },
+    input: {
+      width: "100%",
+      height: 40,
+      borderWidth: 1,
+      borderColor: "gray",
+      marginBottom: 10,
+      padding: 10,
+    },
+    toText: {
+      fontSize: 16,
+      marginVertical: 10,
     },
   });
 
