@@ -19,6 +19,11 @@ const SightCard = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   title: {
     color: "black",
     fontWeight: "bold",
