@@ -1,6 +1,12 @@
 import React from "react";
 
 const SightCard = () => {
+
+  const handleClose = () => {
+    // function for when the X button is pressed
+    console.log("Closing the popup");
+  };
+
   return (
     <View style={styles.container}>
     <XButton onClose={handleClose} />
