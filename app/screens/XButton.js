@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 
-const XButton = () => {
+const XButton = ({ onClose }) => {
   return (
     <TouchableOpacity style={styles.button} onPress={onClose}>
       <Text style={styles.buttonText}>X</Text>
