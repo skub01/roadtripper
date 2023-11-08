@@ -14,8 +14,13 @@ const XButton = () => {
 
 const styles = StyleSheet.create({
   button: {
-    padding: 2,
+    padding: 10,
     alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: black,
+    borderRadius: 50, 
+    width: 40, 
+    height: 40,
   },
 });
 
