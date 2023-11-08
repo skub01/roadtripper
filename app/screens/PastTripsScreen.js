@@ -1,6 +1,6 @@
 import React from "react";
 
-const PastTripsScreen = ({ navigation }) => {
+const PastTripsScreen = () => {
   return (
     <>
       <Text>Past Trips</Text>
