@@ -1,19 +1,14 @@
 import React from "react";
-import { Button } from "react-native";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
 
 const XButton = () => {
   return (
-    <>
-    <Button
-      style={styles.button}
-      title="X"
-      onPress={() => {
-      }}
-    />
-    <Text style={styles.buttonText}>X</Text>
-    </>
+    <TouchableOpacity style={styles.button} onPress={onClose}>
+      <Text style={styles.buttonText}>X</Text>
+    </TouchableOpacity>
   );
 };
+
 
 const styles = StyleSheet.create({
   button: {
