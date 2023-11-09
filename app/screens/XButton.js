@@ -9,19 +9,18 @@ const XButton = ({ onClose }) => {
   );
 };
 
-
 const styles = StyleSheet.create({
   button: {
     padding: 10,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "black",
-    borderRadius: 50, 
-    width: 40, 
+    borderRadius: 50,
+    width: 40,
     height: 40,
   },
   buttonText: {
-    color: "#fff", 
+    color: "#fff",
     fontSize: 16,
   },
 });

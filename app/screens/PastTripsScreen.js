@@ -2,9 +2,9 @@ import React from "react";
 
 const PastTripsScreen = () => {
   return (
-     <View style={styles.container}>
+    <View style={styles.container}>
       <Text>Past Trips</Text>
-      </View>
+    </View>
   );
 };
 

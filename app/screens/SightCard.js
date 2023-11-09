@@ -1,7 +1,6 @@
 import React from "react";
 
 const SightCard = () => {
-
   const handleClose = () => {
     // function for when the X button is pressed
     console.log("Closing the popup");
@@ -9,11 +8,11 @@ const SightCard = () => {
 
   return (
     <View style={styles.container}>
-    <XButton onClose={handleClose} />
-    <Text style={styles.text}>
-      This is a sight card. It should contain a title, photo, and maybe time
-      estimate- quick details.
-    </Text>
+      <XButton onClose={handleClose} />
+      <Text style={styles.text}>
+        This is a sight card. It should contain a title, photo, and maybe time
+        estimate- quick details.
+      </Text>
     </View>
   );
 };
