@@ -9,6 +9,9 @@ const SightCard = () => {
   return (
     <View style={styles.container}>
       <XButton onClose={handleClose} />
+      <Text style={styles.title}>
+        Title Here
+      </Text>
       <Text style={styles.text}>
         This is a sight card. It should contain a title, photo, and maybe time
         estimate- quick details.
