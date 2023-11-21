@@ -12,6 +12,9 @@ const SightCard = () => {
       <Text style={styles.title}>
         Title Here
       </Text>
+      <Image
+        source={require("./pathtoimage.jpg")} 
+      />
       <Text style={styles.text}>
         This is a sight card. It should contain a title, photo, and maybe time
         estimate- quick details.
