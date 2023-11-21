@@ -14,6 +14,7 @@ const SightCard = () => {
       </Text>
       <Image
         source={require("./pathtoimage.jpg")} 
+        style={styles.image}
       />
       <Text style={styles.text}>
         This is a sight card. It should contain a title, photo, and maybe time
@@ -37,6 +38,12 @@ const styles = StyleSheet.create({
   text: {
     color: "black",
     fontSize: 26,
+  },
+    image: {
+    width: 200,
+    height: 200, 
+    borderRadius: 10, 
+    marginBottom: 10, 
   },
 });
 
