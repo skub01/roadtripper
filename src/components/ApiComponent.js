@@ -18,7 +18,7 @@ const ApiComponent = () => {
   }, []); 
 
   return (
-    <View>
+    <View style={styles.container}>
       {data ? (
         <View>
           <Text>Data received from API:</Text>
@@ -30,5 +30,13 @@ const ApiComponent = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+  });
 
 export default ApiComponent;
