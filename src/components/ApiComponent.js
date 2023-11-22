@@ -7,13 +7,20 @@ const ApiComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://rapidapi.com");
-        const result = await response.json();
-        setData(result);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
+        const response = await fetch("https://rapidapi.com", {
+            method: "GET",
+            headers: {
+              'X-RapidAPI-Key': 'API_KEY',
+              'Content-Type': 'application/json',
+            },
+          });
+  
+          const result = await response.json();
+          setData(result);
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      };
     fetchData();
   }, []); 
 
