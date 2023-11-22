@@ -7,7 +7,7 @@ const ApiComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("apiEndpointHere");
+        const response = await fetch("https://rapidapi.com");
         const result = await response.json();
         setData(result);
       } catch (error) {
