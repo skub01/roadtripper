@@ -28,7 +28,6 @@ const ApiComponent = () => {
     <View style={styles.container}>
       {data ? (
         <View>
-          <Text>Data received from API:</Text>
           <Text>{JSON.stringify(data)}</Text>
         </View>
       ) : (
