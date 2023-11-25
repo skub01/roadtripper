@@ -10,13 +10,8 @@ const SightCard = () => {
   return (
     <View style={styles.container}>
       <XButton onClose={handleClose} />
-      <Text style={styles.title}>
-        Title Here
-      </Text>
-      <Image
-        source={require("./pathtoimage.jpg")} 
-        style={styles.image}
-      />
+      <Text style={styles.title}>Title Here</Text>
+      <Image source={require("./pathtoimage.jpg")} style={styles.image} />
       <Text style={styles.text}>
         This is a sight card. It should contain a title, photo, and maybe time
         estimate- quick details.
@@ -40,11 +35,11 @@ const styles = StyleSheet.create({
     color: "black",
     fontSize: 26,
   },
-    image: {
+  image: {
     width: 200,
-    height: 200, 
-    borderRadius: 10, 
-    marginBottom: 10, 
+    height: 200,
+    borderRadius: 10,
+    marginBottom: 10,
   },
 });
 
