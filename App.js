@@ -36,6 +36,16 @@ export default function App() {
           component={SignupScreen}
           options={{ title: "Sign up" }}
         />
+        <Stack.Screen
+          name="Trip"
+          component={TripScreen}
+          options={{ title: "Trip" }}
+        />
+        <Stack.Screen
+          name="Profile"
+          component={ProfileScreen}
+          options={{ title: "Profile" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
