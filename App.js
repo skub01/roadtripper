@@ -8,6 +8,7 @@ import LoginScreen from "./app/screens/LoginScreen";
 import SignupScreen from "./app/screens/SignupScreen";
 import TripScreen from "./app/screens/TripScreen";
 import Profile from "./app/screens/ProfileScreen";
+import PastTripsScreen from "./app/screens/PastTripsScreen"
 
 const Stack = createNativeStackNavigator();
 
@@ -47,6 +48,11 @@ export default function App() {
           name="Profile"
           component={Profile}
           options={{ title: "Profile" }}
+        />
+         <Stack.Screen
+          name="PastTrips"
+          component={PastTripsScreen}
+          options={{ title: "Past trips" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
