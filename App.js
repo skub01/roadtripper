@@ -2,13 +2,14 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Welcome from "./app/screens/Welcome";
-import Profile from "./app/screens/ProfileScreen";
-import LoginScreen from "./app/screens/LoginScreen";
-import SignupScreen from "./app/screens/SignupScreen";
-import TripScreen from "./app/screens/TripScreen";
-import Profile from "./app/screens/ProfileScreen";
-import PastTripsScreen from "./app/screens/PastTripsScreen"
+import {
+  Welcome,
+  LoginScreen,
+  SignupScreen,
+  TripScreen,
+  Profile,
+  PastTripsScreen,
+} from "./app/screens/index";
 
 const Stack = createNativeStackNavigator();
 
@@ -49,7 +50,7 @@ export default function App() {
           component={Profile}
           options={{ title: "Profile" }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="PastTrips"
           component={PastTripsScreen}
           options={{ title: "Past trips" }}
