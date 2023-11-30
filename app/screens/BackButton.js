@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-native";
+import { Button, StyleSheet } from "react-native";
 
 const BackButton = ({ navigation }) => {
   return (
@@ -15,7 +15,6 @@ const BackButton = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   button: {
-    borderRadius: 5,
     padding: 10,
     alignItems: "center",
   },

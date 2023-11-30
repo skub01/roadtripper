@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-native";
+import { Button, StyleSheet } from "react-native";
 
 const NewTripScreen = () => {
   const [startLocation, setStartLocation] = useState("");
