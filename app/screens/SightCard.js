@@ -11,7 +11,7 @@ const SightCard = () => {
     <View style={styles.container}>
       <XButton onClose={handleClose} />
       <Text style={styles.title}>Title Here</Text>
-      <Image source={require("./pathtoimage.jpg")} style={styles.image} />
+      {/* <Image source={require("./pathtoimage.jpg")} style={styles.image} /> */}
       <Text style={styles.text}>
         This is a sight card. It should contain a title, photo, and maybe time
         estimate- quick details.
