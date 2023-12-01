@@ -46,11 +46,6 @@ export default function App() {
           options={{ title: "Trip" }}
         />
         <Stack.Screen
-          name="Profile"
-          component={Profile}
-          options={{ title: "Profile" }}
-        />
-        <Stack.Screen
           name="PastTrips"
           component={PastTripsScreen}
           options={{ title: "Past trips" }}
