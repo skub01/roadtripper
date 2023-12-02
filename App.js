@@ -9,6 +9,7 @@ import {
   TripScreen,
   Profile,
   PastTripsScreen,
+  NewTripScreen,
 } from "./app/screens/index";
 
 const Stack = createNativeStackNavigator();
@@ -49,6 +50,11 @@ export default function App() {
           name="PastTrips"
           component={PastTripsScreen}
           options={{ title: "Past trips" }}
+        />
+        <Stack.Screen
+          name="NewTrip"
+          component={NewTripScreen}
+          options={{ title: "New trip" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
